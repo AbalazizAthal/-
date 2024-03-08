@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://192.168.100.74:34345/ -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PyWebIO Application</title>
+    <meta name="description" content="None">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAByElEQVRYR82XLUzDUBDH/9emYoouYHAYMGCAYJAYEhxiW2EOSOYwkKBQKBIwuIUPN2g7gSPBIDF8GWbA4DAjG2qitEfesi6lbGxlXd5q393/fr333t07QpdfPp8f0nV9CcACEU0DGAOgN9yrAN6Y+QnATbVavcrlcp/dSFMnI9M0J1RV3WHmFQCJTvaN9RoRXbiuu28YxstfPm0BbNtOMPMeEW0C0LoMHDZzmPmIiHbT6XStlUZLgEKhMK5p2iWAyX8GDruVHMdZzmazr+GFXwCmac4oinINYCSm4L5M2fO8RcMwHoO6PwAaf37bh+BNCMdx5oOZaAKIPQdwF2Pa2yWwBGDOPxNNAMuyDohoK+a0t5Rj5sNMJrMtFusA4qopivLcw2mPyu14njclrmgdoFgsnjLzWlSVXuyJ6CyVSq2TqHDJZPI9QpHpJW7Qt1apVEbJsqwVIjqPSzWKDjOvCoBjItqI4hiXLTOfkG3b9wBm4xKNqPMgAMoAhiM6xmX+IQC+AKhxKUbUcQcCQPoWyD2E0q+h9EIkvRRLb0YD0Y4FhNQHiQCQ/iQTEFIfpX4Nl/os9yGkDiY+hNTRLNhSpQ2n4b7er/H8G7N6BRSbHvW5AAAAAElFTkSuQmCC" id="favicon32">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0ElEQVQ4T62TPQrCQBCF30tA8BZW9mJtY+MNEtKr2HkWK0Xtw+4NbGysxVorbyEKyZMNRiSgmJ/tZufNNzO7M0ThxHHc8zxvSnIIoPNyXyXt0zRdR1F0+gxhblhr25IWJMcA3vcFviRtSc6DILg5XyZ0wQB2AAbFir7YBwAjB8kAxpg1ycmfwZlM0iYMwyldz77vH3+U/Y2rJEn6NMYsSc7KZM+1kla01p4BdKsAAFwc4A6gVRHwaARQr4Xaj1j7G2sPUiOjnEMqL9PnDJRd5ycpJXsd2f2NIAAAAABJRU5ErkJggg==" id="favicon16">
+    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/wang0618/PyWebIO-assets@v1.8.3/image/apple-touch-icon.png">
+    <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20null%2C%20%22description%22%3A%20null%2C%20%22start_url%22%3A%20%22.%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22theme_color%22%3A%20%22white%22%2C%20%22background_color%22%3A%20%22white%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22https%3A//cdn.jsdelivr.net/gh/wang0618/PyWebIO-assets%40v1.8.3/image/apple-touch-icon.png%22%2C%20%22type%22%3A%20%22image/png%22%2C%20%22sizes%22%3A%20%22180x180%22%7D%5D%7D">
+    <link rel="stylesheet" href="./PyWebIO Application 88_files/markdown.min.css">
+    <link rel="stylesheet" href="./PyWebIO Application 88_files/codemirror.min.css">
+    <link rel="stylesheet" href="./PyWebIO Application 88_files/toastify.min.css">
+    <link rel="stylesheet" href="./PyWebIO Application 88_files/default.min.css">
+    <link rel="stylesheet" href="./PyWebIO Application 88_files/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./PyWebIO Application 88_files/app.css">
+    
+    
+    <style>
+@import url('<style>
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap')
+</style></head><body class="webio-theme-default">')
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.reem-kufi-<uniquifier> {
+  font-family: "Reem Kufi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+    
+
+
+<div class="pywebio">
+    <div class="container no-fix-height" id="output-container">
+        <div class="markdown-body" id="markdown-body">
+            <div class="text-center" id="pywebio-loading" style="position: fixed; top: 40%; left: 0px; right: 0px; display: none;">
+                <div class="spinner-grow text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+            <div id="pywebio-scope-ROOT"><div style="overflow: auto;"><img src="./PyWebIO Application 88_files/images" alt="" width="1000px" height="400px" style=""></div><div style="direction: rtl; text-align: right;"><h3 id="h3"> تطبيق الكتب الصوتية</h3>
+             <p id="para">اهلا وسهلا بكم في تطبيقنا الجديد للكتب بجميع انواعها </p>
+             <ul>
+             <li>- القرائة باب الثقافة</li>
+             <li>- القراءة هي حوار صامت يكون بين القارئ والكاتب.</li>
+             <li>- الكتاب ليس فقط صديق الإنسان، بل يُصنع أصدقاء.</li>
+             <li>- كيف يريدون أن يفتحوا عالم، وهم عاجزون عن فتح كتاب.</li>
+             </ul>
+             <details id="y">
+             <summary> كتاب قوة العادات </summary>
+             <p> كتاب قوة العادات</p>
+             <audio controls="">
+                 <source src="https://c.top4top.io/m_2989auozc1.mp3" type="audio/mp3">
+             </audio>
+             </details>
+             <hr>
+             <p>جميع الحقوق محفوظة للمطور @ عبدالعزيز عذال</p></div></div>
+        </div>
+        <div id="end-space"></div>
+
+    </div>
+
+    <div id="input-container">
+        <div id="input-cards" class="container"></div>
+    </div>
+</div>
+
+<script src="./PyWebIO Application 88_files/mustache.min.js.تنزيل"></script>  <!--template system-->
+<script src="./PyWebIO Application 88_files/codemirror.min.js.تنزيل"></script>  <!--code textarea editor-->
+<script src="./PyWebIO Application 88_files/addons.js.تنزيل"></script> <!--codemirror addons: matchbrackets, python mode, active line, auto refresh, mode/meta and loadmode -->
+<script src="./PyWebIO Application 88_files/prism.min.js.تنزيل"></script>  <!-- markdown code highlight -->
+<script src="./PyWebIO Application 88_files/FileSaver.min.js.تنزيل"></script>  <!-- saving files on the client-side -->
+<script src="./PyWebIO Application 88_files/jquery.min.js.تنزيل"></script>
+<script src="./PyWebIO Application 88_files/popper.min.js.تنزيل"></script>  <!-- tooltip engine -->
+<script src="./PyWebIO Application 88_files/bootstrap.min.js.تنزيل"></script>
+<script src="./PyWebIO Application 88_files/toastify.min.js.تنزيل"></script> <!-- toast -->
+<script src="./PyWebIO Application 88_files/bs-custom-file-input.min.js.تنزيل"></script> <!-- bootstrap custom file input-->
+<script src="./PyWebIO Application 88_files/purify.min.js.تنزيل"></script>  <!-- XSS sanitizer -->
+<script src="./PyWebIO Application 88_files/bootstrap-select.min.js.تنزيل"></script>
+<script>
+    if (window.navigator.userAgent.indexOf('MSIE ') !== -1 || window.navigator.userAgent.indexOf('Trident/') !== -1)
+        $('#output-container').html('<div class="alert alert-danger" role="alert"> Sorry, this website does not support IE browser. ☹ </div>');
+</script>
+<script src="./PyWebIO Application 88_files/pywebio.min.js.تنزيل"></script>
+
+
+<script src="./PyWebIO Application 88_files/require.min.js.تنزيل"></script> <!-- JS module loader -->
+
+<script>
+    if (window.WebIO === undefined) { // resource load failed
+        let url = new URL(window.location.href);
+        if (url.searchParams.get('_pywebio_cdn') === 'false') {
+            alert("Failed to load resource")
+        } else {
+            url.searchParams.set('_pywebio_cdn', 'false');
+            window.location.href = url.href;
+        }
+    }
+
+    require.config({
+        paths: {
+            'plotly': "https://cdn.plot.ly/plotly-2.12.1.min",
+            "ag-grid": "https://unpkg.com/ag-grid-community@28.2.0/dist/ag-grid-community.min",
+            "ag-grid-enterprise": "https://unpkg.com/ag-grid-enterprise@28.2.0/dist/ag-grid-enterprise.min",
+        },
+    });
+
+
+    $(function () {
+        // https://www.npmjs.com/package/bs-custom-file-input
+        bsCustomFileInput.init()
+    });
+
+    const urlparams = new URLSearchParams(window.location.search);
+    WebIO.startWebIOClient({
+        output_container_elem: $('#markdown-body'),
+        input_container_elem: $('#input-cards'),
+        backend_address: urlparams.get('pywebio_api') || '',
+        app_name: urlparams.get('app') || 'index',
+        protocol: "ws",
+        runtime_config: {
+            debug: urlparams.get('_pywebio_debug'),
+            outputAnimation: !urlparams.get('_pywebio_disable_animate'),
+            httpPullInterval: parseInt(urlparams.get('_pywebio_http_pull_interval') || 1000)
+        },
+    });
+</script>
+
+
+
+<footer class="footer">
+    Powered by <a href="https://www.pyweb.io/" target="_blank">PyWebIO</a>
+</footer>
+
+</weight></uniquifier></weight></uniquifier></body></html>
